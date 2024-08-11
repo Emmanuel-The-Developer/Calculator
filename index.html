@@ -1,0 +1,150 @@
+<!-- A simple calculator to perform basic arithmetic operations  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js">
+    </script>
+</head>
+
+<body>
+    <main class="center__position">
+        <div class="calc__background">
+            <div class="calc calc__layout">
+                <div class="calc__top-layer">
+                    <div class="side__name">
+                        Emmy K <br><br>
+                        CASIO
+                    </div>
+                    <div class="side__screen">
+                        fx-991EX <br><br>
+                        CLASSWIZ
+                    </div>
+                </div>
+                <div class="calc__screen">
+                    <p class="screen">0</p>
+                    <p id="result"></p>
+                </div>
+                <div class="calc__button">
+                    <div class="upper__button">
+                        <p><button onclick="
+                            raiseToPower()
+                        ">x <sup>y</sup></button><button onclick="
+                                calculateLog()
+                            ">log</button><button onclick="
+                                calculateLog()
+                            ">ln</button><button onclick="
+                                addLeftParenthesis()
+                            ">(</button><button onclick="
+                                addRightParenthesis()
+                            ">)</button>
+                        </p>
+                        <p><button onclick="
+                            calculateSquareRoot()
+                        ">&#8730;</button><button id="factorialBtn" onclick="
+                            calculateFactorial()
+                            factorial()
+                        ">x!</button><button onclick="
+                         calculateSquare()
+                        ">x <sup>2 </sup></button><button onclick="
+                            calculateInverse()
+                        ">x <sup>-1</sup></button><button>ENG</button>
+                        </p>
+                        <p><button onclick="
+                            calculateSine()
+                        ">sin</button><button onclick="
+                            calculateCosine()
+                        ">cos</button><button onclick="
+                            calculateTangent()
+                        ">tan</button><button onclick="
+                            calculateArcsine()
+                        ">sin<sup>-1</sup></button><button onclick="
+                            calculateArccosine()
+                        ">cos <sup>-1</sup></button>
+                        </p>
+                        <p><button onclick="
+                            calculateSinh()
+                        ">sinh</button><button onclick="
+                            calculateCosh()
+                        ">cosh</button><button
+                        onclick="calculateTanh()">tanh</button><button onclick="
+                            calculateArctangent()
+                        ">tan <sup>-1</sup></button><button onclick="
+                            calculateResult()
+                        ">CALC</button>
+                        </p>
+                    </div>
+                    <div class="lower__button">
+                        <p><button onclick="
+                        addValue('7');
+                        displayText();
+                        ">7</button><button onclick="
+                        addValue('8')
+                        displayText()
+                        ">8</button><button onclick="
+                        addValue('9')
+                        displayText()
+                        ">9</button><button class="blue_background" onclick="
+                        removeLastCharacter()
+                        ">DEl</button><button
+                                class="blue_background" onclick="
+                                    clearCalculation()
+                                ">AC</button></p>
+                        <p><button onclick="
+                        addValue('4')
+                        displayText()
+                        ">4</button><button onclick="
+                        addValue('5')
+                        displayText()
+                        ">5</button><button onclick="
+                        addValue('6')
+                        displayText()
+                        ">6</button><button onclick="
+                        addOperator('*')
+                        displayText()
+                        ">*</button><button onclick="
+                        addValue('/')
+                        displayText()">/</button></p>
+                        <p><button onclick="
+                        addValue('1')
+                        displayText()
+                        ">1</button><button onclick="
+                        addValue('2')
+                        displayText()
+                        ">2</button><button onclick="
+                        addValue('3')
+                        displayText()
+                        ">3</button><button onclick="
+                        addOperator('+')
+                        displayText()
+                        ">+</button><button onclick="
+                        addOperator('-')
+                        displayText()
+                        ">-</button></p>
+                        <p><button onclick="
+                        addValue('0')
+                        displayText()
+                        ">0</button><button onclick="
+                        addValue('.')
+                        displayText()
+                        ">.</button><button onclick="
+                        appendPi()
+                        ">𝜋</button><button onclick="
+                        loadPreviousCalculation()
+                        ">Ans</button><button onclick="
+                        calculateResult()
+                        ">=</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
